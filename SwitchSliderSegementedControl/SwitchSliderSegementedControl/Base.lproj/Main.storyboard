@@ -35,25 +35,47 @@
                                     <constraint firstAttribute="width" constant="131" id="lpJ-vm-Rd6"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="" image="square.and.arrow.up" catalog="system"/>
+                                    <segment title="" image="square.and.arrow.down" catalog="system"/>
                                 </segments>
+                                <connections>
+                                    <action selector="touchDown:" destination="BYZ-38-t0r" eventType="valueChanged" id="eCi-uC-sgu"/>
+                                </connections>
                             </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HvF-2q-UQa">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" minimumValueImage="book" catalog="system" maximumValueImage="book.fill" translatesAutoresizingMaskIntoConstraints="NO" id="HvF-2q-UQa">
                                 <rect key="frame" x="38" y="550" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="tSO-oQ-dum"/>
+                                </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SliderValue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-Xa-cBc">
+                                <rect key="frame" x="40" y="521" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78v-O6-YYQ">
+                                <rect key="frame" x="133" y="531.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DEL-hK-nA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="1xy-EV-EDe"/>
+                            <constraint firstItem="HvF-2q-UQa" firstAttribute="leading" secondItem="dVe-Xa-cBc" secondAttribute="leading" id="2Lt-bE-Rhx"/>
+                            <constraint firstItem="78v-O6-YYQ" firstAttribute="leading" secondItem="dVe-Xa-cBc" secondAttribute="trailing" constant="3" id="3xd-Bi-5gu"/>
                             <constraint firstItem="6dh-vH-Ut8" firstAttribute="top" secondItem="ylD-YF-L96" secondAttribute="bottom" constant="184.5" id="9Kh-RP-QRu"/>
                             <constraint firstItem="ylD-YF-L96" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="EP0-Dl-0vL"/>
                             <constraint firstItem="HvF-2q-UQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KUp-aD-rup"/>
                             <constraint firstItem="DEL-hK-nA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="Kdg-KI-3KU"/>
+                            <constraint firstItem="HvF-2q-UQa" firstAttribute="top" secondItem="dVe-Xa-cBc" secondAttribute="bottom" constant="8" id="VMn-eF-UId"/>
                             <constraint firstItem="ylD-YF-L96" firstAttribute="top" secondItem="DEL-hK-nA3" secondAttribute="top" id="c3m-4l-41U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HvF-2q-UQa" secondAttribute="trailing" constant="40" id="dzk-ox-wSR"/>
                             <constraint firstItem="ylD-YF-L96" firstAttribute="centerY" secondItem="DEL-hK-nA3" secondAttribute="centerY" id="eTX-6a-IMN"/>
+                            <constraint firstItem="78v-O6-YYQ" firstAttribute="centerY" secondItem="dVe-Xa-cBc" secondAttribute="centerY" id="fOf-sC-KqM"/>
                             <constraint firstItem="6dh-vH-Ut8" firstAttribute="top" secondItem="DEL-hK-nA3" secondAttribute="bottom" constant="184.5" id="fiO-Mz-DVs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ylD-YF-L96" secondAttribute="trailing" constant="110" id="h5P-0F-aRe"/>
                             <constraint firstItem="6dh-vH-Ut8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l3G-ou-Z4I"/>
@@ -65,6 +87,8 @@
                     <connections>
                         <outlet property="leftSwitch" destination="DEL-hK-nA3" id="q3s-o3-cfS"/>
                         <outlet property="rightSwitch" destination="ylD-YF-L96" id="Tbg-aj-PPE"/>
+                        <outlet property="segementSwitch" destination="6dh-vH-Ut8" id="dfA-PP-6u7"/>
+                        <outlet property="sliderValueLabel" destination="78v-O6-YYQ" id="XaK-8K-9X2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,6 +97,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
