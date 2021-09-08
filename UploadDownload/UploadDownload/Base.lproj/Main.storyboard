@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UploadDownload" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CL6-xd-paz">
+                                <rect key="frame" x="188.5" y="161" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHS-jG-3da">
+                                <rect key="frame" x="90.5" y="268" width="233" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="MhV-NT-25R"/>
+                                    <constraint firstAttribute="height" constant="108" id="OL8-jw-mFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="UpLoad">
+                                    <color key="titleShadowColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startToMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1L-tX-Ocb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJS-YJ-paa">
+                                <rect key="frame" x="90.5" y="550" width="233" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="Mhf-FM-5G9"/>
+                                    <constraint firstAttribute="width" constant="233" id="gNV-Be-bxA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="DownLoad"/>
+                                <connections>
+                                    <action selector="startToDownLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INH-DX-jBg"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZWK-as-s3x">
+                                <rect key="frame" x="90.5" y="476" width="233" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Ait-Ui-fQ0"/>
+                                    <constraint firstAttribute="width" constant="233" id="RnL-mY-6Gg"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZWK-as-s3x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4h4-AG-mD3"/>
+                            <constraint firstItem="CL6-xd-paz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="6iR-e4-JcZ"/>
+                            <constraint firstItem="ZWK-as-s3x" firstAttribute="top" secondItem="gHS-jG-3da" secondAttribute="bottom" constant="100" id="8qf-AU-f5L"/>
+                            <constraint firstItem="gHS-jG-3da" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DpV-Mt-zGY"/>
+                            <constraint firstItem="CL6-xd-paz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBH-Le-qgo"/>
+                            <constraint firstItem="BJS-YJ-paa" firstAttribute="top" secondItem="ZWK-as-s3x" secondAttribute="bottom" constant="70" id="bCt-g3-egd"/>
+                            <constraint firstItem="gHS-jG-3da" firstAttribute="top" secondItem="CL6-xd-paz" secondAttribute="bottom" constant="70" id="dnC-TN-9qB"/>
+                            <constraint firstItem="BJS-YJ-paa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIE-0T-91o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="CL6-xd-paz" id="p4c-AJ-5rT"/>
+                        <outlet property="progressView" destination="ZWK-as-s3x" id="5dW-X6-7Ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
