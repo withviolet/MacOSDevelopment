@@ -17,7 +17,6 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let plistPath = Bundle.main.path(forResource: "events", ofType: "plist")
         self.events = NSArray(contentsOfFile: plistPath!)
         
