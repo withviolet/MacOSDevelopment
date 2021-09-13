@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8x1-p1-xVQ">
-                                <rect key="frame" x="37" y="204" width="340" height="84"/>
+                                <rect key="frame" x="37" y="204" width="340" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="Wfj-wv-qHT"/>
-                                    <constraint firstAttribute="height" constant="84" id="yfq-PV-uYc"/>
+                                    <constraint firstAttribute="height" constant="100" id="yfq-PV-uYc"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MY4-hV-ePV" customClass="LLFlowLayout" customModule="CollectionViewSample2" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MY4-hV-ePV" customClass="LLFlowLayout" customModule="CollectionViewSample2" customModuleProvider="target">
                                     <size key="itemSize" width="64" height="64"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -33,7 +33,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="WnI-Wb-FUw" customClass="CollectionViewCell" customModule="CollectionViewSample2" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="64" height="64"/>
+                                        <rect key="frame" x="10" y="18" width="64" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="foo-iq-Tr1">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
