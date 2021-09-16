@@ -25,7 +25,7 @@
                             </scopeButtonTitles>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" textLabel="Mgg-2F-7Uv" detailTextLabel="P0K-2t-elS" style="IBUITableViewCellStyleSubtitle" id="oXh-kf-Lgp" customClass="CustomTableViewCell" customModule="SearchbarTable" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" textLabel="Mgg-2F-7Uv" detailTextLabel="P0K-2t-elS" imageView="QRJ-hm-MjI" style="IBUITableViewCellStyleSubtitle" id="oXh-kf-Lgp" customClass="CustomTableViewCell" customModule="SearchbarTable" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="75.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oXh-kf-Lgp" id="Nu0-ah-Hcv">
@@ -33,19 +33,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mgg-2F-7Uv">
-                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <rect key="frame" x="79" y="6" width="25" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P0K-2t-elS">
-                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="79" y="22.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="1.png" id="QRJ-hm-MjI">
+                                            <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -62,6 +66,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.png" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -38,17 +38,18 @@ class ViewController: UITableViewController,UISearchBarDelegate,UISearchResultsU
         var tempArray: NSArray!
         if(scope == 0) {
             //在中文中查找
-            let scopePredicate = NSPredicate(format: "SELF.name contains[c] %@", searchText)
+            let scopePredicate = NSPredicate(format: "SELF.nameString CONTAINS %@", searchText)
             tempArray = self.listTeams.filtered(using: scopePredicate) as NSArray
             self.listFilterTeams = NSMutableArray(array: tempArray)
         }else if(scope == 1) {
-            let scopePredicate = NSPredicate(format: "SELF.image contains[c] %@", searchText)
+            let scopePredicate = NSPredicate(format: "SELF.detailString CONTAINS %@", searchText)
             tempArray = self.listTeams.filtered(using: scopePredicate) as NSArray
             self.listFilterTeams = NSMutableArray(array: tempArray)
         }else{
             self.listFilterTeams = NSMutableArray(array: self.listTeams)
         }
     }
+    
     //MARK: UISearchResultsUpdating delegate
     func updateSearchResults(for searchController: UISearchController) {
         let searchString = searchController.searchBar.text
@@ -70,8 +71,18 @@ class ViewController: UITableViewController,UISearchBarDelegate,UISearchResultsU
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath) as! CustomTableViewCell
         let row = (indexPath as NSIndexPath).row
         let rowDict = self.listTeams[row] as! NSDictionary
-        cell.textLabel?.text = rowDict["name"] as? String
+        let nameAsString = rowDict["name"] as? String
+        cell.showString(nameString: nameAsString!, detailString: nameAsString!)
+//        cell.nameString = nameAsString
+//        cell.detailString = nameAsString
+        let imagePath = rowDict["image"] as? String
+        cell.imageView?.image = UIImage(named: imagePath!)
+        cell.accessoryType = .disclosureIndicator
         return cell
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 }
 
