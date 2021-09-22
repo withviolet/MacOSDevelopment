@@ -167,9 +167,6 @@
                                 <exclude reference="pCg-Tb-qj9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="OL4-hQ-vg7"/>
-                                <exclude reference="w4m-hp-FGM"/>
-                                <exclude reference="z2X-8z-9pK"/>
                                 <exclude reference="pLP-Ln-LTJ"/>
                                 <exclude reference="U2T-lC-3bt"/>
                                 <exclude reference="WoT-rI-4I3"/>
@@ -183,6 +180,9 @@
                                 <exclude reference="dhq-ib-bMC"/>
                                 <exclude reference="R3H-YG-1Ko"/>
                                 <exclude reference="p9x-2C-roA"/>
+                                <exclude reference="OL4-hQ-vg7"/>
+                                <exclude reference="w4m-hp-FGM"/>
+                                <exclude reference="z2X-8z-9pK"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -195,9 +195,6 @@
                                 <include reference="pCg-Tb-qj9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="OL4-hQ-vg7"/>
-                                <include reference="w4m-hp-FGM"/>
-                                <exclude reference="z2X-8z-9pK"/>
                                 <include reference="pLP-Ln-LTJ"/>
                                 <include reference="U2T-lC-3bt"/>
                                 <include reference="WoT-rI-4I3"/>
@@ -211,6 +208,9 @@
                                 <include reference="dhq-ib-bMC"/>
                                 <include reference="R3H-YG-1Ko"/>
                                 <include reference="p9x-2C-roA"/>
+                                <exclude reference="OL4-hQ-vg7"/>
+                                <include reference="w4m-hp-FGM"/>
+                                <exclude reference="z2X-8z-9pK"/>
                             </mask>
                         </variation>
                     </view>

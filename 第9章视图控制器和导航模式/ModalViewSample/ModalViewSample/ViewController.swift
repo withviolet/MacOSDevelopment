@@ -25,9 +25,11 @@ class ViewController: UIViewController {
     }
 
     @objc func registerCompletion(notification: Notification) -> Void {
-        let theData = notification.userInfo as NSDictionary
-        let username = theData["name"] as! String
-        print("username = ",username)
+//        let theData: NSDictionary? = notification.userInfo as? NSDictionary
+//        let username = theData?["username"] as? String
+//        print("username = ",username)
+        let name = notification.userInfo?["username"]
+        print(name!)
     }
 
 }

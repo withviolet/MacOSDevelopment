@@ -18,16 +18,16 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func cancelClicked(_ sender: Any) {
-        let dataDict = ["username" : self.userNameTextFiled.text!]
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "RegisterCompletionNotification"), object: nil, userInfo: dataDict)
         print("点击取消按钮")
     }
     
     
     @IBAction func saveButtonClicked(_ sender: Any) {
         self.dismiss(animated: true) {
-            print("如果你是难得一见的彩虹，我愿做路人惊叹的叫声\n")
+//            print("如果你是难得一见的彩虹，我愿做路人惊叹的叫声\n")
             print("关闭模态视图")
+            let dataDict = ["username":self.userNameTextFiled.text!]
+            NotificationCenter.default.post(name: NSNotification.Name("RegisterCompletionNotification"), object: nil, userInfo: dataDict)
         }
     }
     
