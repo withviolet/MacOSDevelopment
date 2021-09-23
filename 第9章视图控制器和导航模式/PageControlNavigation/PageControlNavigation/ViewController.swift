@@ -52,7 +52,6 @@ class ViewController: UIViewController,UIScrollViewDelegate {
             let selectedPage = self.pageControl.currentPage
             self.scrollView.contentOffset = CGPoint(x: CGFloat(selectedPage) * S_WIDTH, y: 0.0)
         }
-
     }
 }
 
