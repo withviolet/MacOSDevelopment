@@ -16,11 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrK-xk-8zW">
-                                <rect key="frame" x="28" y="71" width="359" height="501"/>
+                                <rect key="frame" x="0.0" y="71" width="414" height="554"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73440468719999996" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="359" id="Nyr-PU-lEb"/>
-                                    <constraint firstAttribute="height" constant="500" id="TmT-Iv-8K8"/>
+                                    <constraint firstAttribute="height" constant="550" id="JL5-oU-XlN"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="FQR-QR-7ZT"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bo5-Oh-jv9"/>
@@ -29,7 +28,7 @@
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7eo-qG-XEL">
-                                <rect key="frame" x="146.5" y="591" width="121.5" height="28"/>
+                                <rect key="frame" x="146.5" y="588" width="121.5" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="121.5" id="hnf-rx-Bk0"/>
                                 </constraints>
@@ -42,10 +41,12 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7eo-qG-XEL" firstAttribute="centerX" secondItem="qrK-xk-8zW" secondAttribute="centerX" id="Bhz-kZ-yMe"/>
+                            <constraint firstItem="qrK-xk-8zW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MEZ-7v-bC2"/>
                             <constraint firstItem="7eo-qG-XEL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sa9-aI-VFn"/>
-                            <constraint firstItem="7eo-qG-XEL" firstAttribute="top" secondItem="qrK-xk-8zW" secondAttribute="bottom" constant="20" id="XCd-sf-tEo"/>
+                            <constraint firstItem="qrK-xk-8zW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bfY-ch-eD0"/>
                             <constraint firstItem="qrK-xk-8zW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEF-af-bdo"/>
                             <constraint firstItem="qrK-xk-8zW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="pCv-Sp-jgJ"/>
+                            <constraint firstItem="7eo-qG-XEL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="544" id="qeG-VP-wwm"/>
                         </constraints>
                     </view>
                     <connections>

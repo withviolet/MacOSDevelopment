@@ -21,6 +21,9 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        print("S_WIDTH",S_WIDTH)
+//        print("S_HEIGHT",S_HEIGHT)
+        
         // Do any additional setup after loading the view.
         self.scrollView.contentSize = CGSize(width: S_WIDTH * 3, height: S_HEIGHT)
         self.scrollView.frame = self.view.frame
@@ -40,15 +43,15 @@ class ViewController: UIViewController,UIScrollViewDelegate {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 //        print("scroll")
-//        let offset = scrollView.contentOffset
-//        self.pageControl.currentPage = Int(offset.x / S_WIDTH)
+        let offset = scrollView.contentOffset
+        self.pageControl.currentPage = Int(offset.x / S_WIDTH)
     }
 
     @IBAction func changePage(_ sender: Any) {
-//        UIView.animate(withDuration: 0.3) {
-////            let whichPage = self.pageControl.currentPage
-//            self.pageControl.currentPage = Int(self.scrollView.contentOffset.x / S_WIDTH)
-//        }
+        UIView.animate(withDuration: 0.3) {
+            let selectedPage = self.pageControl.currentPage
+            self.scrollView.contentOffset = CGPoint(x: CGFloat(selectedPage) * S_WIDTH, y: 0.0)
+        }
 
     }
 }
