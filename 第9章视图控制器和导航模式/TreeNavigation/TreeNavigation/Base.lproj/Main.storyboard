@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,6 +37,38 @@
             </objects>
             <point key="canvasLocation" x="599" y="515"/>
         </scene>
+        <!--Members Table View Controller-->
+        <scene sceneID="NQ2-Jz-1c7">
+            <objects>
+                <tableViewController storyboardIdentifier="MembersTableViewController" id="WJb-xD-x4X" customClass="MembersTableViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nUD-rp-NuI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cellIdentifier" id="rcx-WN-BMP">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rcx-WN-BMP" id="vy2-2A-WXC">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="K3c-Lo-be1" kind="show" identifier="ShowSelectedDetail" id="Mo1-F4-GR3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WJb-xD-x4X" id="y1e-gs-dII"/>
+                            <outlet property="delegate" destination="WJb-xD-x4X" id="y0P-4g-eWW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bM3-oL-KNq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgF-i6-bxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="519"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="z4n-s2-Xm2">
             <objects>
@@ -51,6 +84,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPM-P3-FV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-319" y="515"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="n6P-kq-oVg">
+            <objects>
+                <viewController id="K3c-Lo-be1" customClass="DetailViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqG-ZC-PjA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="plR-8q-2TF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ka0-X7-6YS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNK-8Z-Hqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="515"/>
         </scene>
     </scenes>
     <resources>

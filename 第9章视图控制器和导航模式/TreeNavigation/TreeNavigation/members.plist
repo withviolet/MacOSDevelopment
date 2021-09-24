@@ -4,36 +4,36 @@
 <dict>
 	<key>CGroup</key>
 	<array>
-		<string>沈小婷</string>
-		<string>苏芮琪</string>
-		<string>蔡冰</string>
-		<string>黄星侨</string>
-		<string>符雅凝</string>
-		<string>徐紫茵</string>
-		<string>陈昕葳</string>
-		<string>文哲</string>
+		<dict>
+			<key>name</key>
+			<string>沈小婷</string>
+			<key>url</key>
+			<string>https://baidu.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>苏芮琪</string>
+			<key>url</key>
+			<string>https://baidu.com</string>
+		</dict>
 	</array>
 	<key>KGroup</key>
 	<array>
-		<string>姜艺书</string>
-		<string>金采炫</string>
-		<string>金多娟</string>
-		<string>徐永恩</string>
-		<string>休宁</string>
-		<string>玛雅</string>
-		<string>金紫罗</string>
-		<string>崔有真</string>
+		<dict>
+			<key>name</key>
+			<string>姜艺书</string>
+			<key>url</key>
+			<string>https://baidu.com</string>
+		</dict>
 	</array>
 	<key>JGroup</key>
 	<array>
-		<string>江崎光</string>
-		<string>坂本舞白</string>
-		<string>川口百合</string>
-		<string>池间琉璃</string>
-		<string>岸本梨梨花</string>
-		<string>梅一</string>
-		<string>永井爱实</string>
-		<string>野仲纱奈</string>
+		<dict>
+			<key>name</key>
+			<string>江崎光</string>
+			<key>url</key>
+			<string>http://baidu.com</string>
+		</dict>
 	</array>
 </dict>
 </plist>

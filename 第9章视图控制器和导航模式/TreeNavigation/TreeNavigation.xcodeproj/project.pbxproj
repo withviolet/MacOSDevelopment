@@ -14,6 +14,8 @@
 		561B585826FD63C5002E347C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561B585726FD63C5002E347C /* Assets.xcassets */; };
 		561B585B26FD63C5002E347C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B585926FD63C5002E347C /* LaunchScreen.storyboard */; };
 		561B586326FD6CE6002E347C /* members.plist in Resources */ = {isa = PBXBuildFile; fileRef = 561B586226FD6CE6002E347C /* members.plist */; };
+		561B586526FD7377002E347C /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B586426FD7377002E347C /* MembersTableViewController.swift */; };
+		561B586726FD84C1002E347C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B586626FD84C1002E347C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		561B585A26FD63C5002E347C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561B585C26FD63C5002E347C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561B586226FD6CE6002E347C /* members.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = members.plist; sourceTree = "<group>"; };
+		561B586426FD7377002E347C /* MembersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
+		561B586626FD84C1002E347C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				561B584E26FD63C3002E347C /* AppDelegate.swift */,
 				561B585026FD63C3002E347C /* SceneDelegate.swift */,
 				561B585226FD63C3002E347C /* ViewController.swift */,
+				561B586626FD84C1002E347C /* DetailViewController.swift */,
+				561B586426FD7377002E347C /* MembersTableViewController.swift */,
 				561B586226FD6CE6002E347C /* members.plist */,
 				561B585426FD63C3002E347C /* Main.storyboard */,
 				561B585726FD63C5002E347C /* Assets.xcassets */,
@@ -143,6 +149,8 @@
 			files = (
 				561B585326FD63C3002E347C /* ViewController.swift in Sources */,
 				561B584F26FD63C3002E347C /* AppDelegate.swift in Sources */,
+				561B586726FD84C1002E347C /* DetailViewController.swift in Sources */,
+				561B586526FD7377002E347C /* MembersTableViewController.swift in Sources */,
 				561B585126FD63C3002E347C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
