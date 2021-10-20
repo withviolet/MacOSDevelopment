@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -38,11 +39,10 @@
                                             <action selector="testLoadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLH-WF-7bc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-Y7-N9X">
-                                        <rect key="frame" x="226" y="59" width="67" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-Y7-N9X">
+                                        <rect key="frame" x="226" y="58.5" width="67" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Mmi-Ar-ChX"/>
-                                            <constraint firstAttribute="width" constant="67" id="wec-RY-doL"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -53,10 +53,13 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="pHT-TP-PLE" firstAttribute="leading" secondItem="Ogb-dt-r05" secondAttribute="leading" constant="3" id="8nG-Hu-LQy"/>
                                     <constraint firstItem="XLG-3t-Kqz" firstAttribute="centerY" secondItem="pHT-TP-PLE" secondAttribute="centerY" id="DAj-vw-wBu"/>
-                                    <constraint firstItem="cqI-Y7-N9X" firstAttribute="leading" secondItem="XLG-3t-Kqz" secondAttribute="trailing" constant="8" id="GuL-6s-5q1"/>
+                                    <constraint firstAttribute="trailing" secondItem="cqI-Y7-N9X" secondAttribute="trailing" constant="61" id="EhH-E3-l1A"/>
+                                    <constraint firstItem="cqI-Y7-N9X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XLG-3t-Kqz" secondAttribute="trailing" symbolic="YES" id="GuL-6s-5q1"/>
                                     <constraint firstAttribute="height" constant="128" id="NrE-hY-J0K"/>
-                                    <constraint firstItem="XLG-3t-Kqz" firstAttribute="leading" secondItem="pHT-TP-PLE" secondAttribute="trailing" constant="8" id="nhU-fu-RiA"/>
+                                    <constraint firstItem="cqI-Y7-N9X" firstAttribute="centerY" secondItem="XLG-3t-Kqz" secondAttribute="centerY" id="PLT-05-grc"/>
+                                    <constraint firstItem="XLG-3t-Kqz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pHT-TP-PLE" secondAttribute="trailing" symbolic="YES" id="nhU-fu-RiA"/>
                                     <constraint firstItem="XLG-3t-Kqz" firstAttribute="centerX" secondItem="Ogb-dt-r05" secondAttribute="centerX" id="oV7-u6-ubH"/>
                                     <constraint firstItem="XLG-3t-Kqz" firstAttribute="top" secondItem="Ogb-dt-r05" secondAttribute="top" constant="49" id="rPI-V1-rrr"/>
                                 </constraints>
@@ -82,6 +85,7 @@
                             <constraint firstItem="VJT-5P-A7M" firstAttribute="leading" secondItem="Ogb-dt-r05" secondAttribute="leading" id="4IU-Qt-oVk"/>
                             <constraint firstItem="VJT-5P-A7M" firstAttribute="leading" secondItem="XVg-07-A48" secondAttribute="leading" id="4TX-LY-WWM"/>
                             <constraint firstItem="Ogb-dt-r05" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="IsZ-Tw-x7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XVg-07-A48" secondAttribute="trailing" symbolic="YES" id="MCt-gz-f0Y"/>
                             <constraint firstItem="VJT-5P-A7M" firstAttribute="top" secondItem="XVg-07-A48" secondAttribute="bottom" constant="26" id="RFt-gQ-bxV"/>
                             <constraint firstItem="XVg-07-A48" firstAttribute="top" secondItem="Ogb-dt-r05" secondAttribute="bottom" constant="156" id="Vh1-kN-wv1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VJT-5P-A7M" secondAttribute="bottom" constant="11" id="e0W-VN-IRk"/>

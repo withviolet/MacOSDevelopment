@@ -21,10 +21,10 @@ class ViewController: UIViewController,WKNavigationDelegate {
     }
     //同步
     @IBAction func testLoadHTMLString(_ sender: Any) -> () {
-        //bundle作用？
+//        //bundle作用？
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
         let bundleUrl = NSURL.fileURL(withPath: Bundle.main.bundlePath)
-        
+//
         do {
 //            let html = try String(contentsOfFile: htmlPath!, encoding: String.Encoding.utf8.rawValue)
             let html = try String.init(contentsOfFile: htmlPath!, encoding: String.Encoding.utf8)
@@ -32,6 +32,7 @@ class ViewController: UIViewController,WKNavigationDelegate {
         } catch let err {
             err.localizedDescription
         }
+        
     }
     //同步
     @IBAction func testLoadData(_ sender: Any) {
