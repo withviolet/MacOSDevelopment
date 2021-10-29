@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXY-vS-p2M">
+                                <rect key="frame" x="142" y="316" width="130" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FlipFromRight"/>
+                                <connections>
+                                    <action selector="doUIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ed3-4j-4yt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBv-oR-Y7u">
+                                <rect key="frame" x="142" y="432.5" width="130" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CurlUp"/>
+                                <connections>
+                                    <action selector="doUIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xD-Hh-OCj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XX-KA-7TO">
+                                <rect key="frame" x="142" y="533.5" width="130" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CurlDown"/>
+                                <connections>
+                                    <action selector="doUIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndV-Dr-2zK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66f-CZ-NBK">
+                                <rect key="frame" x="142" y="204" width="131" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Yly-cy-mPe"/>
+                                    <constraint firstAttribute="height" constant="31" id="waH-Mq-Re4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FlipFromLeft"/>
+                                <connections>
+                                    <action selector="doUIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7J-LC-oPh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bXY-vS-p2M" firstAttribute="top" secondItem="66f-CZ-NBK" secondAttribute="bottom" constant="81" id="4en-5p-Ucu"/>
+                            <constraint firstItem="1XX-KA-7TO" firstAttribute="height" secondItem="66f-CZ-NBK" secondAttribute="height" id="EcA-Z9-oAi"/>
+                            <constraint firstItem="JBv-oR-Y7u" firstAttribute="height" secondItem="66f-CZ-NBK" secondAttribute="height" id="La7-Gk-yL6"/>
+                            <constraint firstItem="1XX-KA-7TO" firstAttribute="centerX" secondItem="66f-CZ-NBK" secondAttribute="centerX" id="MYx-o2-WwF"/>
+                            <constraint firstItem="JBv-oR-Y7u" firstAttribute="centerX" secondItem="66f-CZ-NBK" secondAttribute="centerX" id="Nmb-B2-GPY"/>
+                            <constraint firstItem="66f-CZ-NBK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="cPT-vN-8zL"/>
+                            <constraint firstItem="bXY-vS-p2M" firstAttribute="height" secondItem="66f-CZ-NBK" secondAttribute="height" id="cYN-ru-Zga"/>
+                            <constraint firstItem="bXY-vS-p2M" firstAttribute="width" secondItem="66f-CZ-NBK" secondAttribute="width" id="jwP-Cn-34T"/>
+                            <constraint firstItem="1XX-KA-7TO" firstAttribute="top" secondItem="JBv-oR-Y7u" secondAttribute="bottom" constant="70" id="maQ-Wq-30b"/>
+                            <constraint firstItem="66f-CZ-NBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntE-az-a6f"/>
+                            <constraint firstItem="1XX-KA-7TO" firstAttribute="width" secondItem="66f-CZ-NBK" secondAttribute="width" id="o30-gD-tIl"/>
+                            <constraint firstItem="JBv-oR-Y7u" firstAttribute="width" secondItem="66f-CZ-NBK" secondAttribute="width" id="rlV-oQ-Mfd"/>
+                            <constraint firstItem="bXY-vS-p2M" firstAttribute="centerX" secondItem="66f-CZ-NBK" secondAttribute="centerX" id="tf4-GL-NQC"/>
+                            <constraint firstItem="JBv-oR-Y7u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wAi-4T-Lqo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
