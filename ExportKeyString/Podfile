@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://cdn.cocoapods.org/' #官方仓库地址(spec)
+source 'https://git.tenorshare.cn/mac/cocoapods-spec-repo.git'  #私有仓库地址(spec)
+
+platform :macos, '11.3'
+
+target 'ExportKeyString' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ExportKeyString
+  pod 'libxlsxwriter'
+#  pod "TSLibrary", "~> 1.0"
+#  pod "TSRegister", "~> 1.0"
+#  pod "TSUpdater", "~> 1.0"
+#  pod "TSFeedback", "~> 1.0"
+#  pod "TSPaymentMod", "~> 1.0"
+  
+end
